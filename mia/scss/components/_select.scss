@@ -1,0 +1,37 @@
+.main-select {
+    border-top: 2px solid $primary-color;
+    &__name {
+        position: relative;
+        order: 1;
+        width: 100%;
+        text-transform: uppercase;
+        padding: 1.5rem 0;
+        cursor: pointer;
+        &::before {
+            content: "\f077";
+            position: absolute;
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+            color: $primary-color;
+            right: 0;
+            transition: all 0.25s linear;
+        }
+    }
+}
+.main-option {
+    max-height: 0;
+    opacity: 0;
+    order: 2;
+    transition: all 0.15s ease;
+    @include flexbox(flex-start, flex-start, column);
+    &__item {
+        display: inline-block;
+    }
+}
+.active {
+    max-height: fit-content;
+    opacity: 1;
+}
+.active + .main-select__name::before {
+    transform: rotateX(180deg);
+}
