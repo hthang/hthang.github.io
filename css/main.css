@@ -211,7 +211,7 @@ body {
 .section-home {
   background-image: url("../img/bg/home.jpg");
   background-size: cover;
-  background-position: 100% 22%;
+  background-position: top left;
   background-repeat: no-repeat;
 }
 
