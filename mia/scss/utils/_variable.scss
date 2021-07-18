@@ -1,0 +1,16 @@
+$wrapper: 1920px;
+$padding: 20px;
+$container: 1180px + $padding;
+$primary-color: #2e2e2e;
+$secondary-color: #01bcb5;
+$gray-light-color: #f4f4f4;
+@font-face {
+    font-family: "secondary-fonts";
+    src: url("../font/SFUDinEngAlt.TTF") format("truetype");
+}
+@font-face {
+    font-family: "primary-fonts";
+    src: url("../font/SFUDinNeuGroLight.TTF") format("truetype");
+}
+$secondary-font: "secondary-fonts";
+$primary-font: "primary-fonts";

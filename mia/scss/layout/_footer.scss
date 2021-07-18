@@ -1,0 +1,114 @@
+.footer {
+    background-color: $primary-color;
+
+    &-top {
+        padding: 4.5rem 0 3.5rem;
+        @include flexbox();
+        border-bottom: 1px solid #9f9f9f;
+        @include maxWidth(767px) {
+            border: none;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__logo {
+        flex-grow: 1;
+        @include maxWidth(767px) {
+            display: none;
+        }
+    }
+    &__social {
+        flex-shrink: 0;
+        @include flexbox(flex-start, space-between);
+        width: 12rem;
+        @include maxWidth(767px) {
+            width: 8rem;
+            & img {
+                @include size(1.6rem);
+            }
+        }
+    }
+    &-content {
+        color: #fff;
+        padding: 5rem 0;
+        @include flexbox(stretch, space-between);
+    }
+    &-list {
+        &__item {
+            padding-bottom: 1rem;
+            &:first-child {
+                font-size: 1.4rem;
+                font-family: $secondary-font;
+                text-transform: uppercase;
+            }
+            a {
+                color: #fff;
+            }
+        }
+    }
+    &__desc {
+        max-width: 32%;
+        line-height: 1.5;
+    }
+    &-select {
+        &:first-child {
+            padding-top: 1rem;
+        }
+        @include flexbox(flex-start, flex-start, column);
+        width: 100%;
+        color: #fff;
+        &-option {
+            max-height: 0;
+            opacity: 0;
+
+            order: 1;
+            &__item {
+                padding-bottom: 1rem;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        &__name {
+            order: 0;
+            width: 100%;
+            padding: 1rem 0;
+            border-top: 1px solid #9f9f9f;
+            cursor: pointer;
+            position: relative;
+            @include flexbox();
+            & span {
+                flex-grow: 1;
+            }
+            &::before {
+                content: "\f067";
+                position: absolute;
+                font-family: "Font Awesome 5 Free";
+                font-weight: bold;
+                color: #fff;
+                right: 0;
+                transition: all 0.25s linear;
+            }
+        }
+    }
+    &__text {
+        color: #fff;
+        width: 100%;
+        border-top: 1px solid #9f9f9f;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+        line-height: 1.5;
+    }
+    @include maxWidth(767px) {
+        &-content {
+            display: none;
+        }
+    }
+}
+.active--footer {
+    max-height: fit-content;
+    opacity: 1;
+}
+.active--footer + .footer-select__name::before {
+    content: "\f068";
+}

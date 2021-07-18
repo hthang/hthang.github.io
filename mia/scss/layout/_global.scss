@@ -1,0 +1,43 @@
+body {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+input,
+button,
+textarea,
+select {
+    font-family: $primary-font;
+    font-size: 12px;
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+.wrapper {
+    max-width: $wrapper;
+    margin: 3rem auto;
+    margin-bottom: 0;
+    position: relative;
+}
+.container {
+    max-width: $container;
+    margin: 0 auto;
+    padding: 0 $padding;
+}
+.hide {
+    display: none;
+    @include maxWidth(767px) {
+        display: initial;
+    }
+}
+.visible {
+    visibility: hidden;
+    overflow: hidden;
+    @include maxWidth(767px) {
+        visibility: visible;
+        overflow: visible;
+    }
+}
