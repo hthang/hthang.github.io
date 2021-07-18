@@ -319,17 +319,17 @@
                   </ul>
                 </div>
                 <!-- Contacts form-->
-                <form class="contacts-form js-form" action="#"> 
+                <form class="contacts-form js-form" action="mail.php" method="post"> 
                   <div class="contacts-form__wrap"> 
                     <div class="contacts-form__label">
-                      <input class="contacts-form__input" type="text" placeholder="Họ Tên" data-validate-field="name">
+                      <input name="subject" class="contacts-form__input" type="text" placeholder="Họ Tên" data-validate-field="name">
                     </div>
                     <div class="contacts-form__label">
-                      <input class="contacts-form__input" type="text" placeholder="E-mail" data-validate-field="email">
+                      <input name="emainsend" class="contacts-form__input" type="text" placeholder="E-mail" data-validate-field="email">
                     </div>
                   </div>
-                  <textarea class="contacts-form__textarea" placeholder="Tin nhắn"></textarea>
-                  <button class="contacts-form__button"> <img src="img/blog/form-button.svg" alt="img"></button>
+                  <textarea name="message" class="contacts-form__textarea" placeholder="Tin nhắn"></textarea>
+                  <button type="submit" id="submit" name="send" class="contacts-form__button"> <img src="img/blog/form-button.svg" alt="img"></button>
                 </form>
               </div>
             </div>
