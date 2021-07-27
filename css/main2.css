@@ -1710,10 +1710,17 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .header__logo {
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  text-transform: uppercase;
+  height: 29px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.header__logo img {
+  height: 100%;
+  padding-right: 10px;
 }
 
 .header__logo i {
