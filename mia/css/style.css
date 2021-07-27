@@ -439,7 +439,6 @@ button {
   overflow: hidden;
 }
 .header-search {
-  max-width: 72.5rem;
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -478,19 +477,6 @@ button {
   color: white;
   padding: 0 2.5rem;
   font-size: 1.4rem;
-}
-.header-right {
-  max-width: 8rem;
-  flex-shrink: 0;
-}
-.header__contact {
-  text-align: right;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  line-height: 1.1;
-}
-.header__contact a {
-  color: #2e2e2e;
 }
 .header-bottom {
   padding-left: 25.6rem;
@@ -1193,7 +1179,7 @@ form.click-button {
     box-shadow: none;
   }
   .header__logo {
-    max-width: 33%;
+    max-width: 15%;
   }
   .header__contact {
     font-size: 1.6rem;
@@ -1204,6 +1190,10 @@ form.click-button {
   .product-detail {
     font-size: 10px;
   }
+}
+
+.header__logo {
+  width: 27%;
 }
 
 .blinking{
