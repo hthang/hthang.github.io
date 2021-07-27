@@ -919,6 +919,7 @@ form.click-button {
   .product__name {
     padding-right: 0;
     font-size: 1.2rem;
+    width: fit-content;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1008,9 +1009,11 @@ form.click-button {
     justify-content: center;
   }
 }
+
 .footer__logo {
   flex-grow: 1;
 }
+
 @media screen and (max-width: 767px) {
   .footer__logo {
     display: none;
