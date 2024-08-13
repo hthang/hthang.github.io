@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+    <title>About — Hoang Thang</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" href="../images/logo/logoHT.svg" sizes="any">
+    <link rel="icon" href="../images/logo/logoHT.svg" type="image/svg+xml">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#c1f07c">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#9874d3">
+    <style media="(prefers-color-scheme: light)">
+        :root {
+            color-scheme: light;
+            --color-back-primary: hsl(var(--color-white));
+            --color-back-secondary: hsl(var(--color-titan));
+            --color-text-primary: hsl(var(--color-ebony));
+            --color-text-secondary: hsl(var(--color-grey))
+        }
+
+        .about-section {
+            --about-section-scribble-fill: hsl(var(--color-titan))
+        }
+
+        .article-card {
+            --article-card-box-back: hsl(var(--color-titan))
+        }
+
+        .content {
+            --content-code-back: hsl(var(--color-titan))
+        }
+
+        .intro {
+            --intro-photo-back: hsl(var(--color-sulu));
+            --intro-scribble-fill: hsl(var(--color-titan))
+        }
+
+        .lead {
+            --lead-back: hsl(var(--color-titan));
+            --lead-scribble-fill: hsl(var(--color-grey)/.1)
+        }
+
+        .prism {
+            --prism-text: #24292f;
+            --prism-back: hsl(var(--color-titan));
+            --prism-gray: #666e77;
+            --prism-red: #cf222e;
+            --prism-green: #116329;
+            --prism-blue: #0550ae;
+            --prism-indigo: #0a3069;
+            --prism-purple: #8250df;
+            --prism-brown: #953800
+        }
+
+        .project-feature {
+            --project-feature-scribble-fill: hsl(var(--color-white)/1)
+        }
+
+        .project-section {
+            --project-section-scribble-fill: hsl(var(--color-titan))
+        }
+
+        .theme-switcher {
+            --theme-switcher-back: hsl(var(--color-ebony));
+            --theme-switcher-text: hsl(var(--color-white))
+        }
+    </style>
+    <style media="(prefers-color-scheme: dark)">
+        :root {
+            color-scheme: dark;
+            --color-back-primary: hsl(var(--color-ebony));
+            --color-back-secondary: hsl(var(--color-steel));
+            --color-text-primary: hsl(var(--color-white));
+            --color-text-secondary: hsl(var(--color-manatee))
+        }
+
+        .about-section {
+            --about-section-scribble-fill: hsl(var(--color-manatee)/.2)
+        }
+
+        .article-card {
+            --article-card-box-back: hsl(var(--color-steel))
+        }
+
+        .content {
+            --content-code-back: hsl(var(--color-steel))
+        }
+
+        .intro {
+            --intro-photo-back: hsl(var(--color-lilac));
+            --intro-scribble-fill: hsl(var(--color-manatee)/.2)
+        }
+
+        .lead {
+            --lead-back: hsl(var(--color-steel));
+            --lead-scribble-fill: hsl(var(--color-manatee)/.1)
+        }
+
+        .prism {
+            --prism-text: #c9d1d9;
+            --prism-back: hsl(var(--color-steel));
+            --prism-gray: #8b949e;
+            --prism-red: #ff7b72;
+            --prism-green: #7ee787;
+            --prism-blue: #79c0ff;
+            --prism-indigo: #a5d6ff;
+            --prism-purple: #d2a8ff;
+            --prism-brown: #ffa657
+        }
+
+        .project-feature {
+            --project-feature-scribble-fill: hsl(var(--color-white)/.6)
+        }
+
+        .project-section {
+            --project-section-scribble-fill: hsl(var(--color-manatee)/.2)
+        }
+
+        .theme-switcher {
+            --theme-switcher-back: hsl(var(--color-white));
+            --theme-switcher-text: hsl(var(--color-ebony))
+        }
+    </style>
+    <script defer src="../scripts/index.js"></script>
+</head>
+
+<body class="page__body">
+    <header class="header column"><button class="header__button action action--hover" type="button"
+            aria-expanded="false" aria-controls="menu" aria-label="Toggle menu"><svg
+                class="header__icon-menu action__icon" width="24" height="24" aria-hidden="true">
+                <use href="../images/icons.svg#menu" />
+            </svg> <span class="header__text-menu">Menu </span><svg class="header__icon-close action__icon" width="24"
+                height="24" aria-hidden="true">
+                <use href="../images/icons.svg#close" />
+            </svg> <span class="header__text-close">Close</span></button> <a class="header__link" href="../index.html"
+            aria-label="Home"><img class="header__logo" src="../images/logo/logoHT.svg" width="32" height="32"></a>
+        <nav class="menu menu--closed" id="menu" aria-label="Primary">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="../index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="index.html" aria-current="page">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main column" id="main">
+        <header class="caption">
+            <h1 class="caption__title caption__title--top">About</h1>
+        </header>
+        <div class="intro">
+            <picture class="intro__picture intro__picture--about">
+                <img class="intro__photo" src="../images/photo/2560.jpg" width="640" height="426" fetchpriority="high"
+                    alt="Black and white portrait on a colored background.">
+            </picture>
+            <p class="intro__who">I’m Hoang Thang, Ux/Ui Designer based in HaNoi</p>
+            <svg class="intro__scribble" width="200" height="200" aria-hidden="true">
+                <use href="../images/scribbles.svg#1" />
+            </svg>
+        </div>
+        <div class="about-section-list" style="margin-top: 80px">
+            <section class="about-section about-section-list__skills">
+                <h2 class="about-section__title">Skills</h2>
+                <p class="about-section__desc">Some of my favorite technologies, topics, or tools that
+                    I worked with</p>
+                <ul class="about-section__skills">
+                    <li>Ux</li>
+                    <li>Figma</li>
+                    <li>Full Adobe</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Project Management</li>
+                    <li>Team work</li>
+
+                </ul>
+            </section>
+            <section class="about-section about-section-list__work">
+                <h2 class="about-section__title">Work</h2>
+                <p class="about-section__desc">Experienced in handling large workloads and collaborating with multiple
+                    departments to achieve the best possible results.</p>
+                <ol class="about-section__work about-work" reversed>
+                    <li class="about-work__item"><span class="about-work__period"><time>2023</time> –
+                            <time>Now</time></span> <span class="about-work__company">Ommani</span> <span
+                            class="about-work__title">Ux/Ui Designer</span></li>
+                    <li class="about-work__item"><span class="about-work__period"><time>2020</time> –
+                            <time>2022</time></span> <span class="about-work__company">OES</span> <span class="about-work__title">Product Designer</span></li>
+                </ol><svg class="about-section__scribble about-section__scribble--work" width="200" height="200"
+                    aria-hidden="true">
+                    <use href="../images/scribbles.svg#2" />
+                </svg>
+            </section>
+            <section class="about-section about-section-list__contacts">
+                <h2 class="about-section__title">Contacts</h2>
+                <p class="about-section__desc">You can get in touch with me via email, Telegram
+                    or Zalo</p>
+                <ul class="about-section__contacts">
+                    <li><a class="action" href="mailto:hthang0108@gmail.com" target="_blank"><svg class="action__icon" width="24"
+                                height="24" aria-hidden="true">
+                                <use href="../images/icons.svg#mail" />
+                            </svg>hthang0108@gmail.com</a></li>
+                    <li><a class="action" href="https://t.me/hthang0108" target="_blank"><svg class="action__icon" width="24" height="24"
+                                aria-hidden="true">
+                                <use href="../images/icons.svg#telegram" />
+                            </svg>t.me/hthang0108</a></li>
+                    <li><a class="action" href="https://zalo.me/0947507882" target="_blank"><svg class="action__icon" width="24"
+                                height="24" aria-hidden="true">
+                                <use href="../images/icons.svg#twitter" />
+                            </svg>zalo.me/0947507882</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer column">
+        <div class="footer__section">
+            <h4 class="footer__title">Links</h4>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="https://zalo.me/0947507882"
+                        target="_blank">Zalo</a>
+                </li>
+                <li class="footer__item"><a class="footer__link" href="https://t.me/hthang0108"
+                        target="_blank">Telegram</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer__section">
+            <h4 class="footer__title">Email</h4><a class="footer__link"
+                href="mailto:hthang0108@gmail.com">hthang0108@<wbr>gmail.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>
