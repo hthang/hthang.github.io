@@ -162,7 +162,8 @@
 
 .about-section-list {
     row-gap: 80px;
-    display: grid
+    display: grid;
+    padding-block-start: 80px;
 }
 
 @media (max-width:1024px) {
