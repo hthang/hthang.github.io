@@ -1,6 +1,6 @@
 {
-	"name": "Vadim Makeev",
-	"description": "Frontend developer in love with the Web, browsers, bicycles, and podcasting",
+	"name": "Hoang Thang",
+	"description": "UX/UI Designer in love with App, Web, and Graphic design",
 	"lang": "en",
 	"dir": "ltr",
 	"id": "/",
@@ -10,12 +10,12 @@
 	"orientation": "natural",
 	"icons": [
 		{
-			"src": "/images/logo/192.png",
+			"src": "/images/logo/logoHT.svg",
 			"type": "image/png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "/images/logo/512.png",
+			"src": "/images/logo/logoHT.svg",
 			"type": "image/png",
 			"sizes": "512x512"
 		}
