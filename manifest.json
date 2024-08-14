@@ -10,12 +10,12 @@
 	"orientation": "natural",
 	"icons": [
 		{
-			"src": "/images/logo/logoHT.svg",
+			"src": "./images/logo/logoHT.svg",
 			"type": "image/png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "/images/logo/logoHT.svg",
+			"src": "./images/logo/logoHT.svg",
 			"type": "image/png",
 			"sizes": "512x512"
 		}
